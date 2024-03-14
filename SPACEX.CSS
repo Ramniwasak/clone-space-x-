@@ -1,0 +1,160 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.page{
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    margin: 0%;
+    padding: 0%;
+    
+
+}
+.ko1{
+    height: 100vh;
+    width: 100vw;
+
+}
+#navbar{
+    position: fixed;
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ko2{
+    position: relative;
+}
+#maininner{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5vh;
+
+}
+#inner a{
+    font-size: smaller;
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    padding: 3pxpx;
+}
+#inner2 a {
+    text-decoration: none;
+    color: rgba(255, 255, 255,1);
+    margin: 5px;
+    padding: 5px;
+    font-size: small;
+}
+#inner2 i{
+    color: white;
+    padding: 3px;
+}
+#inner2:hover a{
+    text-decoration: underline;
+font-weight: bold;
+}
+
+#body{
+    /* height: 90vh; */
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    margin-top:65vh ;
+    margin-left: 4vw;
+}
+
+
+#inner a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#body h2{
+    color: white;
+    font-size: 20px;
+
+}
+#body h1{
+    font-size: 6vh;
+    color: #fff;
+}
+.WATCH{
+    border: 3px SOLID WHITE;
+    padding: 5px;
+    width:20vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.WATCH H3{
+    color: #fff;
+    line-height: 50px;
+}
+.WATCH:hover h3{
+    color: black;
+    z-index: 1;
+}
+.WATCH::after{
+    content: "";
+    height: 0%;
+    width: 0%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    border-radius: 100%;
+    transition: ease-out 0.5s;
+
+}
+.WATCH:hover::after{
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    border-radius: 0%;
+
+}
+#videocon{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: overlay;
+}
+#video{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: -1;
+}
+footer{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 1;
+}
+footer a{
+margin :5px 4px ;
+text-decoration: none;  
+color: white;
+font-size: small;
+font-weight: 400;
+}
+@media (max-width:960px) {
+    #maininner a{
+display: none;
+    }
+}
